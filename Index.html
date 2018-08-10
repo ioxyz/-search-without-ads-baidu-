@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport"
+      content="user-scalable=no, width=device-width, maximum-scale=1.0">
+    <title>Clean Search</title
+    <link rel="shortcut icon" href="./images/hhh.ico" >
+    <link rel="stylesheet" href="./css/Index.css">
+<!--作者邮箱yzboy98@gmail.com-->
+<!--转载源代码请注明出处-->
+<!--南京邮电大学2017级Walter-->
+<!--2018年8月9日22:11:29-->
+<style type="text/css">
+
+.dropbtn {
+    background-color: #333134;
+    color: #333134;
+    margin: 0 auto;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 微软雅黑;
+ 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+     right: 0;
+    position: absolute;
+    background-color: #333134;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {background-color: #000000}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #595959;
+}
+
+p{font-size:80px;letter-spacing:-2px;font-family:Arial,Helvetica, Sans-Serif;}
+
+p .g1{color:#1065e6;}
+p .o1{color:#df432e;}
+p .o2{color:#ffb709;}
+p .g2{color:#166df1;}
+p .l{color:#03a25d;}
+p .e{color:#d64632;}
+body{ text-align:center}
+.exp{ border:1px ; width:100%; }
+
+</style>
+<!--颜色记录Google Logo             body{background-color:#333134}
+
+p .g1{color:#1065e6;}
+p .o1{color:#df432e;}
+p .o2{color:#ffb709;}
+p .g2{color:#166df1;}
+p .l{color:#03a25d;}
+p .e{color:#d64632;}
+-->
+    <script>
+       
+        document.onkeydown = function(e){
+            if(!e){
+                e = window.event;
+            }
+            if((e.keyCode || e.which) == 13){
+                do_search();
+            }
+        }
+
+     
+        function do_search() {
+            var search_txt = document.getElementById("search-bar-input").value;
+            if (search_txt == "") {
+              document.getElementById("search-bar-input").value="请输入关键词";
+                return false;
+            }
+
+            var search_url = "https://www.baidu.com/s?wd=" + search_txt;
+
+            window.open(search_url);
+        }
+        
+               
+        
+    </script>
+    <script>
+     document.onkeydown = function(e){
+            if(!e){
+                e = window.event;
+            }
+            if((e.keyCode || e.which) == 13){
+                do_search();
+            }
+        }
+
+     function do_search1() {
+            var search_txt1 = document.getElementById("search-bar-input").value;
+            if (search_txt1 == "") {
+             document.getElementById("search-bar-input").value="请输入关键词";
+                return false;
+            }
+
+           var search_url1 = "https://www.google.com.hk/?ssl#newwindow=1&safe=strict&q=" + search_txt1;
+          
+
+            window.open(search_url1);
+        }
+        
+           </script>
+        <script>
+     document.onkeydown = function(e){
+            if(!e){
+                e = window.event;
+            }
+            if((e.keyCode || e.which) == 13){
+                do_search();
+            }
+        }
+
+     function do_search3() {
+            var search_txt2 = document.getElementById("search-bar-input").value;
+            if (search_txt2 == "") {
+                document.getElementById("search-bar-input").value="can not be empty";
+                return false;
+            }
+
+           var search_url2 = "https://translate.google.cn/#en/zh-CN/" + search_txt2;
+            window.open(search_url2);
+        }
+      </script>
+      
+  
+    <script>
+       
+        document.onkeydown = function(e){
+            if(!e){
+                e = window.event;
+            }
+            if((e.keyCode || e.which) == 13){
+                do_search();
+            }
+        }
+
+     
+        function do_searchb() {
+            var search_txtb = document.getElementById("search-bar-input").value;
+            if (search_txtb == "") {
+              document.getElementById("search-bar-input").value="请输入关键词";
+                return false;
+            }
+
+            var search_urlb = "https://cn.bing.com/search?q=" + search_txtb;
+
+            window.open(search_urlb);
+        }
+        
+               
+        
+    </script>
+      
+     
+     
+     <script>
+      var colors = ["white","#333134"];
+      var index = 0;
+      function whitecolor(){
+      var color = colors[index++];
+      document.bgColor = color;
+      if (index == colors.length) {
+      index = 0;
+      }
+      }
+</script>
+</head>
+<body>
+
+<body bgColor= "#333134">
+
+
+<div class="exp" >
+<p><span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span></p>
+</div>
+
+<div id="search-bar">
+<div class="exp" >
+    <input id="search-bar-input" type="text"  autocomplete="off">
+    
+<div class="dropdown">
+ <button class="dropbtn">Go!</button>
+ <div class="dropdown-content">
+ 
+
+   <div><button onclick="do_search()">百度一下</button></div>
+    <div><button onclick="do_search1()"  >谷歌搜索</button></div>
+      <div><button onclick="do_searchb()">必应搜索</button></div>
+<div><button onclick="do_search3()">英文翻译</button></div>
+<div><button  onclick="whitecolor()">主题切换</button></div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
