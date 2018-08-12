@@ -8,30 +8,21 @@
       content="user-scalable=no, width=device-width, maximum-scale=1.0">
     <title>Betterso.cn 专注搜索</title
     <link rel="shortcut icon" href="favicon.ico" >
-    <link rel="stylesheet" href="./css/Index.css">
+    <link rel="stylesheet" href="./css/Index2.css">
 <!--作者邮箱yzboy98@gmail.com-->
 <!--转载源代码请注明出处www.walterzhang.cn-->
 <!--南京邮电大学2017级Walter-->
 <!--2018年8月9日22:11:29-->
-<script>
-    var inputElem = document.getElemntById('button');
-    var inputElem = document.getElemntById('search-bar-input');
-      var inputElem = document.getElemntById('search-bar-input');
-      button.addEventListener(‘click’, function(ev){
-       inputElem.focus();
-      });
-      </script>
 <style type="text/css">
 
 .dropbtn {
-
 height:38px;
 width: 100%;
     background-color: #333134;
     color: #333134;
     margin:auto;
     font-size: 40px;
-    border: 0;
+    border: none;
     cursor: pointer;
     font-family: 微软雅黑;
  
@@ -73,17 +64,17 @@ width: 100%;
 
 p{font-size:80px;letter-spacing:-2px;font-family:Arial,Helvetica, Sans-Serif;}
 
-p .g1{color:#1065e6;}
-p .o1{color:#df432e;}
-p .o2{color:#ffb709;}
-p .g2{color:#166df1;}
-p .l{color:#03a25d;}
-p .e{color:#d64632;}
+p .g1{color:#f4f4f4;}
+p .o1{color:#f4f4f4;}
+p .o2{color:#f4f4f4;}
+p .g2{color:#f4f4f4;}
+p .l{color:#f4f4f4;}
+p .e{color:#f4f4f4;}
 body{ text-align:center}
-
-.exp{ border:1 px ; width:100%;}
+.exp{ border:1px ; width:100%; }
 
 </style>
+
 <!--颜色记录Google Logo             body{background-color:#333134}
 
 p .g1{color:#1065e6;}
@@ -93,7 +84,6 @@ p .g2{color:#166df1;}
 p .l{color:#03a25d;}
 p .e{color:#d64632;}
 -->
-
     <script>
        
         document.onkeydown = function(e){
@@ -195,6 +185,8 @@ p .e{color:#d64632;}
                
         
     </script>
+      
+     
      
      <script>
       var colors = ["white","#333134"];
@@ -209,13 +201,13 @@ p .e{color:#d64632;}
 </script>
 <script>
 function black(){
-window.open("night.html",'_self');
+window.open("http://s.walterzhang.cn",'_self');
 }
 </script>
 </head>
 <body>
 
-<body bgColor= "white">
+<body bgColor= "#333134">
 
 
 <div class="exp" >
@@ -224,7 +216,7 @@ window.open("night.html",'_self');
 
 <div id="search-bar">
 <div class="exp" >
-    <input id="search-bar-input" type="text"   autocomplete="off" placeholder= "Enter Keywords...">
+    <input id="search-bar-input" type="text"  autocomplete="off">
     
 <div class="dropdown">
  <button class="dropbtn">Go!</button>
@@ -235,8 +227,7 @@ window.open("night.html",'_self');
     <div><button onclick="do_search1()"  >谷歌搜索</button></div>
       <div><button onclick="do_searchb()">必应搜索</button></div>
 <div><button onclick="do_search3()">英文翻译</button></div>
-<div><button  onclick="black()">夜间主题</button></div>
-
+<div><button  onclick="black()">经典主题</button></div>
 </div>
 </div>
 </div>
